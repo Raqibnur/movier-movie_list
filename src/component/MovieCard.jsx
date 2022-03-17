@@ -7,7 +7,7 @@ const MovieCard =({movie }) => {
         <>
             <div className="relative m-3 border border-gray-300 rounded-lg shadow-sm border-opacity-20">
                 <div className="movieImg">
-                <a href={`https://www.imdb.com/title/${movie.imdbID}`} target="_blank">
+                <a href={`https://www.imdb.com/title/${movie.imdbID}`} target="_blank" rel="noreferrer">
                     <img 
                         src={movie.Poster !== "N/A" ? movie.Poster : 'https://via.placeholder.com/400'} alt="movie.title" 
                         className="rounded-lg object-cover lg:h-[441px] h-[320px]"
